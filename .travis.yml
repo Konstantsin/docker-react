@@ -8,3 +8,8 @@ before_install:
 
 script:
   - docker run -e CI=true ksavon/docker-react npm run test
+
+deploy:
+  verbose: true
+  provider: azure_web_apps
+  site: https://docker-react-ksavon.azurewebsites.net
