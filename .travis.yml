@@ -13,3 +13,4 @@ deploy:
   verbose: true
   provider: azure_web_apps
   site: https://react-app-ksavon-staging.azurewebsites.net
+  slot: react-app-ksavon-staging
