@@ -12,4 +12,4 @@ script:
 deploy:
   verbose: true
   provider: azure_web_apps
-  site: https://docker-react-ksavon.azurewebsites.net
+  site: https://react-app-ksavon-staging.azurewebsites.net
