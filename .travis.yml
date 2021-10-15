@@ -12,3 +12,4 @@ script:
 deploy:
   verbose: true
   provider: azure_web_apps
+  skip_cleanup: true
