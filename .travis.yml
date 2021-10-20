@@ -9,9 +9,7 @@ before_install:
 script:
   - docker run -e CI=true ksavon/docker-react:test npm run test
 
-deploy:
-  verbose: true
-  script:
+after_success:
   - docker build -t kswest.azurecr.io/ksavon/docker-react:latest .
   - echo "Image is built"
   - docker login kswest.azurecr.io --username $SP_APP_ID --password $SP_PASSWD
