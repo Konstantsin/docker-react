@@ -14,5 +14,8 @@ deploy:
   provider: azure_web_apps
   script:
   - docker build -t kswest.azurecr.io/ksavon/docker-react:latest .
+  - echo "Image is built"
   - docker login kswest.azurecr.io --username $SP_APP_ID --password $SP_PASSWD
+  - echo "Azure registry loged in"
   - docker push kswest.azurecr.io/ksavon/docker-react:latest
+  - echo "Image Pushed"
