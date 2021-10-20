@@ -9,6 +9,9 @@ function App() {
         <p>
           Hello world from Travis CI!
         </p>
+        <p>
+          New Paragraph!
+        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
